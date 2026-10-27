@@ -1,0 +1,180 @@
+<?php
+// Устанавливка часового пояса
+date_default_timezone_set('Europe/Chelyabinsk');
+$hour = date('H');
+if ($hour >= 6 && $hour < 18) {
+    $theme = 'day-mode';
+} else {
+    $theme = 'night-mode';
+}
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник без границ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Сюда добавляем класс темы -->
+<body class="<?php echo $theme; ?>">
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.php" class="logo">ПраздникБезГраниц</a>
+        <nav class="main-nav">
+            <a href="index.php" class="nav-link active">Главная</a>
+            <a href="pages/about.php" class="nav-link">Команда</a>
+            <a href="pages/catalog.php" class="nav-link">Услуги</a>
+            <a href="pages/sale.php" class="nav-link">Акции</a>
+            <a href="pages/zayavka.php" class="nav-link">Оставить заявку</a>
+            <a href="pages/login.php" class="nav-link">Вход</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Банер -->
+    <section class="baner">
+        <div class="baner-overlay"></div>
+        <div class="container baner-content">
+            <h1 class="baner-title">Праздник без границ</h1>
+            <p class="baner-subtitle">Праздник без границ - где фантазия не знает границ!</p>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="section about-section">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <p class="section-desc">Доборо пожаловать в мир где каждый день может стать настоящим праздником. Мы продаем туры на фестивали и карнавалы.</p>
+            <div class="team-full-grid">
+                <!-- Карточка 1 -->
+                <div class="team-member-card team-member--red">
+                    <img src="assets/images/maria.png" class="team-member-photo">
+                    <h3 class="team-member-name">Мария Мариновна</h3>
+                    <span class="team-member-role">Праздничный специалист</span>
+                    <p class="team-member-desc">Она анализирует праздники и карнавалы, сопоставляет информацию, чтобы внести уже нужные значения в праздники.</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="team-member-card team-member--blue">
+                    <img src="assets/images/nikolay.png" class="team-member-photo">
+                    <h3 class="team-member-name">Николай Николаевич</h3>
+                    <span class="team-member-role">Праздниковед</span>
+                    <p class="team-member-desc">Он анализирует все праздники и карнавалы, следит за развитием и использует технологии, чтобы лучше их понимать и учить.</p>
+                </div>
+
+                <!-- Карточка 3  -->
+                <div class="team-member-card team-member--red">
+                    <img src="assets/images/arnold.png" class="team-member-photo">
+                    <h3 class="team-member-name">Арнольд Фёдорович</h3>
+                    <span class="team-member-role">Блогер</span>
+                    <p class="team-member-desc">Рассказывает людям о самых интересных, необычных, загадочных и ярких праздниках и фестивалях которые существуют на разных углах нашей планеты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section services-section">
+        <div class="container">
+            <h2 class="section-title">Услуги</h2>
+            <div class="services-grid">
+                <a href="pages/catalog.php" class="service-card">
+                    <img src="assets/images/holi.jpg">
+                    <div class="service-card-body">
+                        <h3>Фестиваль красок Холи, Индия</h3>
+                        <p>13 марта</p>
+                        <span class="btn-link" style="color: #F0E3E3;">В Услуги</span>
+                    </div>
+                </a>
+                <a href="pages/catalog.php" class="service-card">
+                    <img src="assets/images/sapporo.jpg">
+                    <div class="service-card-body">
+                        <h3>(Япония)Зимний фестиваль снежных скульптур</h3>
+                        <p>4 февраля</p>
+                        <span class="btn-link" style="color: #F0E3E3;">В Услуги</span>
+                    </div>
+                </a>
+                <a href="pages/catalog.php" class="service-card">
+                    <img src="assets/images/rio.jpg">
+                    <div class="service-card-body">
+                        <h3>Бразильский карнавал в Рио-де-Жанейро</h3>
+                        <p>13–18 февраля 2026</p>
+                        <span class="btn-link" style="color: #F0E3E3;">В Услуги</span>
+                    </div>
+                </a>
+                <a href="pages/catalog.php" class="service-card">
+                    <img src="assets/images/photo_5465366500463023323_y.jpg">
+                    <div class="service-card-body">
+                        <h3>Летний фестиваль белых ночей в Петербурге</h3>
+                        <p>c 23 по 25 апреля</p>
+                        <span class="btn-link" style="color: #F0E3E3;">В Услуги</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section reviews-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Александр</span>
+                        <div class="review-stars">★★★★★</div>
+                    </div>
+                    <div class="catalog-footer"></div>
+                    <strong>Тур:</strong>
+                    <p class="review-text">Летний фестиваль белых ночей в Петербурге:</p>
+                    <div class="catalog-footer"></div>
+                    <p class="review-text">Отличная организация поездки на Летний фестиваль Белых ночей в Петербург! Сайт подобрал лучшие билеты на мероприятия, жильё и экскурсии. Город в период белых ночей невероятно красив, развод мостов и атмосфера - выше всяких похвал. Спасибо за яркий отпуск!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Мария</span>
+                        <div class="review-stars"> ★★★★★</div>
+                    </div>
+                    <div class="catalog-footer"></div>
+                    <strong>Тур:</strong>
+                    <p class="review-text">(Япония)Зимний фестиваль снежных скульптур:</p>
+                    <div class="catalog-footer"></div>
+                    <p class="review-text">Спасибо за незабываемую поездку на Зимний фестиваль снежных скульптур в Японию! Всё организовано идеально: от билетов до трансферов. Саппоро и фестиваль - настоящее волшебство, магия снега и льда. Вернулась переполненная эмоциями и классными фото. Рекомендую!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-kontact">
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <p>Почта для связи:</p>
+            <p>Svazi@gmail.com</p>
+            <p>Почта для рекламных предложений:</p>
+            <p>Pochta.reclama12@gmail.com</p>
+            <p>Телефон поддержки:</p>
+            <p>55-56-66</p>
+        </div>
+        <div class="footer-col">
+            <h4>Навигация</h4>
+            <a href="index.php">Главная</a>
+            <a href="pages/about.php">Команда</a>
+            <a href="pages/catalog.php">Услуги</a>
+            <a href="pages/sale.php">Акции</a>
+            <a href="pages/zayavka.php" class="nav-link">Оставить заявку</a>
+            <a href="pages/login.php" class="nav-link">Вход</a>
+        </div>
+        <div class="footer-col">
+        </div>
+    </div>
+    <div class="footer-prava container">
+        <p>© Все права защищены 2026</p>
+    </div>
+</footer>
+</body>
+</html>
