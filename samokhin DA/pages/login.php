@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>Вход - Праздник без границ</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.php" class="logo"> ПраздникБезГраниц</a>
+            <nav class="main-nav">
+                <a href="../index.php" class="nav-link">Главная</a>
+                <a href="about.php" class="nav-link">Команда</a>
+                <a href="catalog.php" class="nav-link">Услуги</a>
+                <a href="sale.php" class="nav-link">Акции</a>
+                <a href="zayavka.php" class="nav-link">Оставить заявку</a>
+                <a href="login.php" class="nav-link active">Вход</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section form-section">
+            <div class="container form-container form-container--login">
+                <div class="form-header">
+                    <h1 class="form-title">Вход в личный кабинет</h1>
+                    <p class="form-subtitle">Введите данные</p>
+                </div>
+
+                <form class="main-form main-form--login">
+                    <div class="form-group form-group--full">
+                        <input type="email" id="login-email" placeholder="Введите почту" required>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <input type="password" placeholder="Введите пароль" required>
+                    </div>
+
+                    <div class="form-group form-group--checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-text">Запомнить меня</span>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-form-submit">Войти</button>
+
+                    <a href="zayavka.html" class="form-link">Оставить заявку</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-kontact">
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>Почта для связи:</p>
+                <p>Svazi@gmail.com</p>
+                <p>Почта для рекламных предложений:</p>
+                <p>Pochta.reclama12@gmail.com</p>
+                <p>Телефон поддержки:</p>
+                <p>55-56-66</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <a href="../index.html">Главная</a>
+                <a href="about.html" class="nav-link">Команда</a>
+                <a href="catalog.html" class="nav-link">Услуги</a>
+                <a href="sale.html" class="nav-link">Акции</a>
+                <a href="zayavka.html" class="nav-link">Оставить заявку</a>
+                <a href="login.html">Вход</a>
+            </div>
+            <div class="footer-col">
+            </div>
+        </div>
+        <div class="footer-prava container">
+            <p>© Все права защищены 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
